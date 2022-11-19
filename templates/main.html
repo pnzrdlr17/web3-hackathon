@@ -71,7 +71,6 @@
         background: black;
       }
 
-      /* Trick */
       body {
         display: flex;
         flex-direction: column;
@@ -89,18 +88,16 @@
       class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark"
       style="background-color: black !important"
     >
-      <a
-        style="text-decoration: none; color: white"
-        href="{{ url_for('home') }}"
-      >
+      <a style="text-decoration: none; color: white" href="{{ url_for('home') }}">
         <h1 style="font-size: 1.6rem">
           <img
             src="{{ url_for('static', filename = 'kid4.png') }}"
             alt=""
             style="height: 57px"
-          />&nbsp;&nbsp;KIDNEY DISEASE PREDICTION
-        </h1></a
-      >
+          />
+          &nbsp;&nbsp;KIDNEY DISEASE PREDICTION
+        </h1>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -117,15 +114,8 @@
           <li class="nav-item active">
             <a href="{{ url_for('home') }}" class="nav-link"><h4>Home</h4></a>
           </li>
-          <!-- <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('kidneyPage') }}"
-              ><h3>Kidney-Disease</h3></a
-            >
-          </li> -->
           <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('workingPage') }}"
-              ><h4>About</h4></a
-            >
+            <a class="nav-link" href="{{ url_for('workingPage') }}"><h4>About</h4></a>
           </li>
         </ul>
       </div>

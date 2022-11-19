@@ -3,11 +3,10 @@ import pickle
 import numpy as np
 import pandas as pd
 from PIL import Image
-from tensorflow.keras.models import load_model
 
 
 app = Flask(__name__)
-
+model = pd.read_pickle('models/kidney.pkl')
 def predict(values, dic):
     model = pd.read_pickle('models/kidney.pkl')
     values = np.asarray(values)
